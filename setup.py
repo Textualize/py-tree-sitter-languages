@@ -24,7 +24,7 @@ setuptools.setup(
     packages=["tree_sitter_languages"],
     package_data={"tree_sitter_languages": ["languages.so", "languages.dll"]},
     install_requires=["tree-sitter<0.22.0"],
-    python_requires=">=3.8",
+    python_requires=">=3.8.1",
     project_urls={
         "Documentation": "https://github.com/Textualize/py-tree-sitter-languages",
         "Source": "https://github.com/Textualize/py-tree-sitter-languages",
