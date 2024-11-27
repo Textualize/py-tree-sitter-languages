@@ -4,6 +4,12 @@ Python Bindings for Tree Sitter with All Languages
 
 Binary Python wheels for all tree sitter languages.
 
+This is a fork of `py-tree-sitter-languages` which adds support for Python 3.13.
+
+Note that it does not add support for the newer tree-sitter versions - this is
+primarily intended to ensure Textual applications can use syntax highlighting
+on modern Python versions.
+
 `py-tree-sitter`_ is a fantastic library that provides Python bindings for the
 even more fantastic `tree-sitter`_ parsing library.
 
