@@ -9,3 +9,5 @@ vendor/
 build/
 dist/
 *.egg-info/
+
+.venv/
