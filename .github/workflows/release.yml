@@ -54,7 +54,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: release
-      url: https://pypi.org/textual-tree-sitter-languages
+      url: https://pypi.org/p/textual-tree-sitter-languages
     permissions:
       id-token: write  # Mandatory for trusted publishing to PyPI
 
