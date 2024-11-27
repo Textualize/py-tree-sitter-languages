@@ -34,7 +34,7 @@ jobs:
       - name: Build wheels
         run: python -m cibuildwheel --output-dir dist
         env:
-          CIBW_BEFORE_BUILD: pip install cython==3.0.8 && pip install -e . && python build.py
+          CIBW_BEFORE_BUILD: pip install Cython==3.0.11 && pip install -e . && python build.py
           CIBW_TEST_REQUIRES: pytest
           CIBW_TEST_COMMAND: pytest --showlocals {package}/tests
           CIBW_SKIP: "{pp*}"
