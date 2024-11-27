@@ -5,7 +5,7 @@ import setuptools
 from Cython.Build import cythonize
 
 init = (pathlib.Path("tree_sitter_languages") / "__init__.py").read_text()
-match = re.search(r"^__version__ = '(.+)'$", init, re.MULTILINE)
+match = re.search(r"^__version__ = \"(.+)\"$", init, re.MULTILINE)
 version = match.group(1)
 
 with open("README.rst") as reader:
