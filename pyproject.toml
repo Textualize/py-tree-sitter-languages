@@ -1,6 +1,6 @@
 [project]
 name = "textual_tree_sitter_languages"
-version = "1.11.0"
+version = "1.11.0b0"
 description = "Binary Python wheels for popular tree sitter languages."
 authors = [
     {name = "Textualize", email = "will@textualize.io"},
