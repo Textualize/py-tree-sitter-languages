@@ -33,7 +33,6 @@ LANGUAGES = [
     "markdown",
     "objc",
     "ocaml",
-    "perl",
     "php",
     "python",
     "ql",
