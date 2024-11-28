@@ -27,7 +27,6 @@ Tracker = "https://github.com/Textualize/py-tree-sitter-languages/issues"
 [build-system]
 requires = [
     "setuptools>=74.1",
-    "wheel",
     "Cython",
 ]
 build-backend = "setuptools.build_meta"
@@ -35,9 +34,9 @@ build-backend = "setuptools.build_meta"
 [tool.setuptools]
 packages = ["tree_sitter_languages"]
 package-data = {"tree_sitter_languages" = ["languages.so", "languages.dll"]}
-
-[tool.setuptools.ext_modules]
-tree_sitter_languages = {sources = ["tree_sitter_languages/core.pyx"]}
+ext-modules = [
+    {name = "tree_sitter_languages", sources = ["tree_sitter_languages/core.pyx"]}
+]
 
 [tool.cython]
 language_level = "3"
