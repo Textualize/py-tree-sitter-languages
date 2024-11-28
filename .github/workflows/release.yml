@@ -32,7 +32,7 @@ jobs:
           platforms: all
 
       - name: Build wheels
-        run: uvx cibuildwheel@2.22.0 --output-dir dist
+        run: uvx --with setuptools cibuildwheel@2.22.0 --output-dir dist
         env:
           CIBW_BEFORE_BUILD: pip install -e . && python build.py
           CIBW_TEST_REQUIRES: pytest
