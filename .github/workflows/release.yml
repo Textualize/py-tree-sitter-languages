@@ -32,9 +32,9 @@ jobs:
           platforms: all
 
       - name: Build wheels
-        run: uvx --with setuptools cibuildwheel@2.22.0 --output-dir dist
+        run: uvx cibuildwheel@2.22.0 --output-dir dist
         env:
-          CIBW_BEFORE_BUILD: pip install -e . && python build.py
+          CIBW_BEFORE_BUILD: pip install setuptools && pip install -e . && python build.py
           CIBW_TEST_REQUIRES: pytest
           CIBW_TEST_COMMAND: python -m pytest --showlocals {package}/tests
           CIBW_SKIP: "{cp36-*,cp37-*,pp*}"  # Skip Python 3.6 and 3.7, as well as PyPy
