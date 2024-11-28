@@ -1,4 +1,4 @@
-from tree_sitter_languages import get_language, get_parser
+from textual_tree_sitter_languages import get_language, get_parser
 
 LANGUAGES = [
     "bash",

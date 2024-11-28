@@ -32,10 +32,10 @@ requires = [
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
-packages = ["tree_sitter_languages"]
-package-data = {"tree_sitter_languages" = ["languages.so", "languages.dll"]}
+packages = ["textual_tree_sitter_languages"]
+package-data = {"textual_tree_sitter_languages" = ["languages.so", "languages.dll"]}
 ext-modules = [
-    {name = "tree_sitter_languages", sources = ["tree_sitter_languages/core.pyx"]}
+    {name = "textual_tree_sitter_languages", sources = ["textual_tree_sitter_languages/core.pyx"]}
 ]
 
 [tool.cython]
