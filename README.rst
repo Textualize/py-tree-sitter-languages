@@ -47,7 +47,7 @@ Usage
 
 .. code:: python
 
-   from textual_tree_sitter_languages import get_language, get_parser
+   from tree_sitter_languages import get_language, get_parser
 
    language = get_language('python')
    parser = get_parser('python')
@@ -140,7 +140,7 @@ Enter `tree-sitter`_
 
 .. code:: python
 
-   from textual_tree_sitter_languages import get_language, get_parser
+   from tree_sitter_languages import get_language, get_parser
 
    language = get_language('python')
    parser = get_parser('python')
