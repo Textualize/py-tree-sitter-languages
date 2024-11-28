@@ -25,7 +25,7 @@ Install
 
 ::
 
-   pip install tree_sitter_languages
+   pip install textual_tree_sitter_languages
 
 Source installs are not supported. To see how the binary wheels are built, look
 at:
@@ -47,7 +47,7 @@ Usage
 
 .. code:: python
 
-   from tree_sitter_languages import get_language, get_parser
+   from textual_tree_sitter_languages import get_language, get_parser
 
    language = get_language('python')
    parser = get_parser('python')

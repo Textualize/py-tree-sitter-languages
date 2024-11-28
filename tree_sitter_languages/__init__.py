@@ -1,9 +1,4 @@
-"""Tree Sitter with Languages"""
-
-from .core import get_language, get_parser
-
-__version__ = "1.11.0"
-__title__ = "textual_tree_sitter_languages"
-__author__ = "Grant Jenks"
-__license__ = "Apache 2.0"
-__copyright__ = "2022-2024, Grant Jenks"
+"""
+Binary wheels for tree-sitter for several common languages.
+Does not support tree-sitter v0.22.0 and above.
+"""

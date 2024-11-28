@@ -1,10 +1,42 @@
 [project]
+name = "textual_tree_sitter_languages"
+version = "1.11.0"
+description = "Binary Python wheels for popular tree sitter languages."
+authors = [
+    {name = "Textualize", email = "will@textualize.io"},
+]
 requires-python = ">= 3.8"
+readme = "README.rst"
+license = {text = "Apache 2.0"}
+dependencies = ["tree-sitter<0.22.0"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Natural Language :: English",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: Implementation :: CPython",
+]
+
+[project.urls]
+Documentation = "https://github.com/Textualize/py-tree-sitter-languages"
+Source = "https://github.com/Textualize/py-tree-sitter-languages"
+Tracker = "https://github.com/Textualize/py-tree-sitter-languages/issues"
 
 [build-system]
 requires = [
     "setuptools>=42",
     "Cython",
 ]
-
 build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["tree_sitter_languages"]
+package-data = {"tree_sitter_languages" = ["languages.so", "languages.dll"]}
+
+[tool.setuptools.ext_modules]
+tree_sitter_languages = {sources = ["tree_sitter_languages/core.pyx"]}
+
+[tool.cython]
+language_level = "3"

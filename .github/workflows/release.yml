@@ -34,7 +34,7 @@ jobs:
       - name: Build wheels
         run: uvx cibuildwheel@2.22.0 --output-dir dist
         env:
-          CIBW_BEFORE_BUILD: pip install --upgrade Cython==3.0.11 && pip install -e . && python build.py
+          CIBW_BEFORE_BUILD: pip install -e . && python build.py
           CIBW_TEST_REQUIRES: pytest
           CIBW_TEST_COMMAND: pytest --showlocals {package}/tests
           CIBW_SKIP: "{pp*}"
